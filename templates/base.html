@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products proj</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div class="min-h-screen flex flex-col justify-center items-center">
+        <!-- Content block -->
+        <div class="w-full max-w-2xl p-5 bg-white rounded-lg shadow-md">
+            {% block content %}
+            <!-- Your dynamic content will go here -->
+            {% endblock %}
+        </div>
+        <!-- End of content block -->
+
+        <!-- Navigation link -->
+        <div class="mt-5">
+            <a href="{% url 'products-list' %}" class="text-indigo-600 hover:text-indigo-800 font-semibold">← Back</a>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
